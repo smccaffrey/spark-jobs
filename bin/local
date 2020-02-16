@@ -1,0 +1,8 @@
+/usr/local/spark/bin/spark-submit \
+ --master spark://192.168.0.243:7077 \
+ --executor-cores 1 \
+ --driver-memory 2g
+ sample_job.py
+
+ # --conf "spark.driver.host=192.168.0.243" \
+# --conf "spark.driver.bindAddress=192.168.0.243" \
